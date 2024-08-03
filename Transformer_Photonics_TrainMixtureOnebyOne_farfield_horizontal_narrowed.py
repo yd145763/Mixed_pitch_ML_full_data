@@ -175,7 +175,7 @@ for num_transformer_blocks in num_transformer_blocksS:
         data_full1 = data_full1.sort_values(by='z', axis=0)
         data_full1 = data_full1.iloc[int(len(data_full1['z'])*0.6):,:]
         
-        data1 = data_full1[['z',label, 'RSI', 'EMAF', 'mixture', 'EMAM', 'EMAS', 'TargetNextClose']]
+        data1 = data_full1[['z',label, 'RSI', 'EMAF',  'EMAM', 'EMAS', 'TargetNextClose']]
 
         data1.dropna(inplace = True)
         data1.reset_index(inplace = True)
@@ -225,7 +225,7 @@ for num_transformer_blocks in num_transformer_blocksS:
             data_full_filtered_sorted = data_full_filtered.sort_values(by='z', axis=0)
             data_full_filtered_sorted_shortened = data_full_filtered_sorted.iloc[:int(len(data_full_filtered_sorted['z'])*0.6),:]
 
-            data = data_full_filtered_sorted_shortened[['z',label, 'RSI', 'EMAF', 'mixture', 'EMAM', 'EMAS', 'TargetNextClose']]
+            data = data_full_filtered_sorted_shortened[['z',label, 'RSI', 'EMAF',  'EMAM', 'EMAS', 'TargetNextClose']]
 
             data.dropna(inplace = True)
             data.reset_index(inplace = True)
@@ -313,7 +313,7 @@ for num_transformer_blocks in num_transformer_blocksS:
         data_full2 = data_full2.sort_values(by='z', axis=0)
         data_full2 = data_full2.iloc[int(len(data_full1['z'])*0.6):,:]
         
-        data2 = data_full2[['z',label, 'RSI', 'EMAF', 'mixture', 'EMAM', 'EMAS', 'TargetNextClose']]
+        data2 = data_full2[['z',label, 'RSI', 'EMAF',  'EMAM', 'EMAS', 'TargetNextClose']]
 
         data2.dropna(inplace = True)
         data2.reset_index(inplace = True)
